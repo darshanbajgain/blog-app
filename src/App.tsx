@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Public Routes */}
-        <Route path="/blog/:id" element={<BlogPostDetails />} />
 
         <Route element={<PublicRoute />}>
+          <Route path="/blog/:id" element={<BlogPostDetails />} />
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
         </Route>
